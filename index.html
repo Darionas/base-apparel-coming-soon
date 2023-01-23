@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="keywords" content="Base Apparel coming soon page solution" />
-  <meta name="description" content=" Base Apparel coming soon page challenge on Frontend Mentor" />
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
-  <!--<link rel="stylesheet" href="main.css" />-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="keywords" content="Base Apparel coming soon page solution"/>
+  <meta name="description" content=" Base Apparel coming soon page challenge on Frontend Mentor"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+  <!--<link rel="stylesheet" href="main.css"/>-->
   <!--<script defer src="main.js"></script>-->
 </head>
 <body>
     <div class="grid_container">
         <!--1st component-->
-       
+        <header class="header">
+            <h1 class="sr-only">Base apparel</h1>
+            <a class="header__logo" href="#home" aria-label="Base apparel"><img class="logo_icon" src="images/logo.svg" alt="Base apparel"/></a>
+            <picture class="header__image">
+                <source media="(max-width: 47.9375rem)" srcset="images/hero-mobile.jpg">
+                <source media="(min-width: 48rem)" srcset="images/hero-desktop.jpg">
+                <img class="image" src="images/hero-desktop.jpg" alt="Women"/>
+            </picture>
+        </header>
         <!--2nd component-->
-        
-        <!--3rd component-->
-       
-       <!--4th component-->
+        <main>
+
+        </main>
+       <!--3rd component-->
         <footer class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">@Carlos & @Darionas</a>.
+            Coded by <a href="#">@Pra Pre & @Darionas</a>.
         </footer>
     </div>
 </body>
