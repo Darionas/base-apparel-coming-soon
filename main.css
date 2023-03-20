@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url(FM_part.css);
+
+
+:root {
+    /* colors */
+    /* primary*/
+    --clr-red: hsl(0, 36%, 70%);
+    --clr-soft-red: hsl(0, 93%, 68%);
+
+     /* neutral */
+     --clr-dark-grayish-red: hsl(0, 6%, 24%);
+
+    /* gradients */
+    --gradient1: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    --gradient2: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+   
+  
+    /* typography */
+    /* fonts */
+    --ff-primary: 'Josefin Sans', sans-serif;
+    --fw-300: 300; /* base */
+    --fw-400: 400;
+    --fw-600: 600;
+    --fs-16: 1rem; /* 16px */
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+}
+
+p {
+    line-height: 1.5;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-300);
+    
+}
+
+/*---------------------Mobile layout-------------------------*/
+.grid_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'header'
+        'main'
+        'attribution';
+    gap: 1rem;
+    justify-items: center;
+    background-image: var(--gradient1);
+    /*border: 2px solid green;*/
+}
+
+/* style 1st component - mobile */
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'sr-only'
+        'header__logo'
+        'header__image';
+    background-color: transparent;
+}
+
+.sr-only {
+    display: none;
+}
+
+.header__logo {
+    padding: 1.2rem;
+    width: 10rem;
+}
+
+/* style 2nd component - mobile */
+.main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'main__title'
+        'main__advertisement'
+        'main__input-container'
+        'main__validation';
+    gap: 1rem;
+    margin: 2rem;
+    background-color: transparent;
+}
+
+/* 2nd component styled in external stylesheet */
+
+/*---------------------Desktop layout-------------------------*/
+@media screen and (min-width: 48rem) {
+
+* {
+    display: none;
+}
+
+
+/* style 1st component - desktop */ 
+
+
+/*style 2nd component - desktop */
+/* 2nd component styled in external stylesheet */
+    
+}
+
+/*------------------grid area names---------------------------*/
+.header {
+    grid-area: header;
+}
+
+.sr-only {
+    grid-area: sr-only;
+}
+
+.header__logo {
+    grid-area: header__logo;
+}
+
+.header__image {
+    grid-area: header__image;
+}
+
+.main {
+    grid-area: main;
+}
+
+.main__title {
+    grid-area: main__title;
+}
+
+.main__advertisement {
+    grid-area: main__advertisement;
+}
+
+.main__input-container {
+    grid-area: main__input-container;
+}
+
+.main__validation {
+    grid-area: main__validation;
+}
+
+.attribution {
+    grid-area: attribution;
+}
