@@ -78,8 +78,8 @@ body {
 }
 
 .header__logo {
-    padding: 1.2rem;
-    width: 10rem;
+    padding: 1.5rem 2rem;
+    width: 9.5rem;
 }
 
 /* style 2nd component - mobile */
@@ -91,9 +91,84 @@ body {
         'main__advertisement'
         'main__input-container'
         'main__validation';
-    gap: 1rem;
+    gap: .5rem;
     margin: 2rem;
     background-color: transparent;
+}
+
+.main__title {
+    justify-self: center;
+    text-align: center;
+    font-size: 2.2rem;
+    line-height: 1;
+    letter-spacing: .4rem;
+    padding: .4rem;
+    text-transform: uppercase;
+    font-weight: var(--fw-600);
+    color: var(--clr-dark-grayish-red);
+    /*border: 2px solid green;*/
+}
+
+.main__title-colored {
+    font-weight: var(--fw-300);
+    color: var(--clr-red);
+}
+
+.main__advertisement {
+    justify-self: center;
+    text-align: center;
+    color: var(--clr-red);
+    font-weight: var(--fw-400);
+}
+
+.main__input-container {
+    position: relative;
+    display: inline-flex;
+    justify-self: center;
+    align-items: center;
+    width: 100%;
+    padding: .5rem;
+    border-radius: 2rem;
+    margin: 1rem 0 0 0;
+    border: 0.1px solid var(--clr-red);
+}
+
+.main__input-email {
+    border: none;
+    margin: 0 .5rem 0 1rem;
+    background-color: transparent;
+}
+
+.main__input-email::placeholder {
+    color: var(--clr-red);
+}
+
+.main__icon-error {
+    display: none;
+}
+
+.main__arrow-container {
+    position: absolute;
+    right: 0px;
+    width: 4rem;
+    padding: .7rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: hsla(0, 93%, 68%, .6);
+}
+
+.main__icon-arrow {
+    position: relative;
+    left: 40%;
+}
+
+.main__validation {
+    display: none;
+    color: var(--clr-soft-red);
+    font-weight: var(--fw-400);
+    font-size: .8rem;
+    margin: 0 0 0 1.4rem;
+    /*border: 2px solid green;*/
 }
 
 /* 2nd component styled in external stylesheet */
