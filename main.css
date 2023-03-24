@@ -42,11 +42,10 @@ p {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
     font-family: var(--ff-primary);
     font-size: var(--fs-16);
     font-weight: var(--fw-300);
-    background-color: hsl(0, 93%, 68%, .1);
+    background-image: var(--gradient1);
 }
 
 /*---------------------Mobile layout-------------------------*/
@@ -59,13 +58,10 @@ body {
         'attribution';
     gap: 1rem;
     justify-items: center;
+    align-self: start;
     background-image: var(--gradient1);
     /*border: 2px solid green;*/
 }
-/*
-* {
-    border: 2px solid green;
-}*/
 
 /* style 1st component - mobile */
 .header {
@@ -104,6 +100,7 @@ body {
     margin: 2rem;
     justify-items: center;
     background-color: transparent;
+    /*border: 2px solid green;*/
 }
 
 .main__logo {
@@ -113,11 +110,11 @@ body {
 .section {
     display: inline-block;
     margin: 1rem 0 0 0;
+    max-width: 19rem;
     /*border: 2px solid green;*/
 }
 
 .section__title {
-    /*justify-self: center;*/
     text-align: center;
     font-size: 2.2rem;
     line-height: 1;
@@ -135,7 +132,6 @@ body {
 }
 
 .section__advertisement {
-    /*justify-self: center;*/
     text-align: center;
     padding: .4rem;
     color: var(--clr-red);
@@ -145,7 +141,6 @@ body {
 .section__input-container {
     position: relative;
     display: inline-flex;
-    /*justify-self: center;*/
     align-items: center;
     width: 100%;
     padding: .5rem;
@@ -201,8 +196,6 @@ body {
 /*---------------------Desktop layout-------------------------*/
 @media screen and (min-width: 48rem) {
 
-
-
 .grid_container {
     grid-template-columns: 2fr;
     grid-template-areas:
@@ -210,11 +203,11 @@ body {
         'attribution attribution';
     gap: 0;
     width: 95rem;
+    align-self: start;
     /*border: 2px solid red;*/
 }
 
 /* style 1st component - desktop */
-
 .header__logo {
     display: none;
 }
@@ -224,7 +217,6 @@ body {
 }
 
 /* style 2nd component - desktop */ 
-
 .main {
     width: 100%;
     margin: 0;
@@ -246,34 +238,24 @@ body {
     height: auto;
     /*border: 2px solid green;*/
 }
-/*
+
 .section {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        'section__title'
-        'section__advertisement'
-        'section__input-container'
-        'section__validation';
-    justify-items: center;
-}*/
+    max-width: 28rem;
+    /*border: 2px solid green;*/
+}
 
 .section__title {
     text-align: left;
-    width: 28rem;
     line-height: 1.1;
     letter-spacing: .6rem;
     font-size: 3rem;
-    align-self: center;
     margin: auto;
     /*border: 2px solid green;*/
 }
 
 .section__advertisement {
     text-align: left;
-    width: 28rem;
     margin: auto;
-    align-self: center;
     /*border: 2px solid green;*/
 }
 
@@ -282,8 +264,13 @@ body {
 }
 
 
-/*style 2nd component - desktop */
-/* 2nd component styled in external stylesheet */
+/*style 3rd component - desktop */
+.attribution {
+    /*width: 100%;*/
+    margin-top: 0rem;
+    padding: 2.5rem;
+    background-color: transparent;
+}
     
 }
 
