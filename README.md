@@ -24,6 +24,6 @@
 - [x] Create CSS layout according style guides (4th task)
 - [x] Create grid layout for mobile first (5th task)
 - [x] Craete grid layout for desktop (6th task)
-- [ ] Implement JavaScript (7th task)
-- [ ] Overview of solution and RWD (8th task)
-- [ ] Tada it is done. Congratulation you reach your goal.🎉
+- [x] Implement JavaScript (7th task)
+- [x] Overview of solution and RWD (8th task)
+- [x] Tada it is done. Congratulation you reach your goal.🎉
