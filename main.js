@@ -13,13 +13,12 @@ let get_email;
     get_email = email.value;
     if(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(get_email)) {
         input_container.classList.remove('colored--border');
-        validation.classList.remove('show');
+        validation.classList.remove('show--notice');
         icon.classList.remove('show');  
     }
 }
 
-btn.addEventListener('click', function(e) {   
-    console.log(e.detail); 
+btn.addEventListener('click', function() {   
     if(/[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/.test(get_email)) {
         alert(`Dear client,\n` +
             `-Your email ${get_email} was added to our clients list.\n` + 
@@ -27,7 +26,7 @@ btn.addEventListener('click', function(e) {
         setTimeout(location.reload(), 3000);  
     } else {
         input_container.classList.add('colored--border');
-        validation.classList.add('show');
+        validation.classList.add('show--notice');
         icon.classList.add('show');
     }
 });

@@ -146,11 +146,17 @@ body {
     border: 2px solid var(--clr-soft-red);
 }
 
+/*responsive input field size*/
+/*https://stackoverflow.com/questions/18073218/responsive-input-field-width-or-other-elements#answer-18073300*/
 .section__input-email {
     border: none;
+    width: calc(100% - 6.5rem);
     margin: 0 .5rem 0 1rem;
     font-weight: var(--fw-400);
     background-color: transparent;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
 }
 
 .section__input-email::placeholder {
@@ -166,11 +172,12 @@ body {
 .section__icon-error {
     display: none;
     position: absolute;
-    right: 4.5rem;
+    right: 4.2rem;
     /*border: 2px solid green;*/
 }
 
 .section__arrow-container {
+    cursor: pointer;
     position: absolute;
     right: 0px;
     width: 4rem;
@@ -186,12 +193,16 @@ body {
 }
 
 .section__validation {
-    display: none;
+    visibility: hidden;
     color: var(--clr-soft-red);
     font-weight: var(--fw-400);
     font-size: .8rem;
     margin: .3rem 0 0 1.4rem;
     /*border: 2px solid green;*/
+}
+
+.show--notice {
+    visibility: visible;
 }
 
 .show {
@@ -271,10 +282,13 @@ body {
     width: 100%;
 }
 
+.section__arrow-container:hover {
+    background-color: hsla(0, 93%, 68%, .3);
+}
+
 
 /*style 3rd component - desktop */
 .attribution {
-    /*width: 100%;*/
     margin-top: 0rem;
     padding: 2.5rem;
     background-color: transparent;
