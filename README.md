@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Base_apparel_coming_soon](.images/base_apparel_coming_soon.png)
+![Base_apparel_coming_soon](./images/base_apparel_coming_soon.png)
 
 ### Links
 
